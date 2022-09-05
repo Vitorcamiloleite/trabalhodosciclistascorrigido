@@ -139,7 +139,7 @@ function draw() {
     redCG.setLifetimeEach(-1);
 
     //escreva uma condição para chamar a função reset()
-
+if(keyDown("UP_ARROW")) { reset(); }
 }
 }
 
@@ -175,7 +175,7 @@ function reset(){
   gameState = PLAY
   gameOver.visible = false
   mainCyclist.addAnimation("gameOver.png")
-  pinkCyclists.destroyEach
+  pinkCyclists.destroyEach()
   distance = 0
 }
 
